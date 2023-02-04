@@ -1,0 +1,572 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a,
+em, img, strong, b, u, i, center, ol, ul, li label,
+footer, header, nav, section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 19pt;
+    font-weight: 300;
+    line-height: 1.75em;
+    background-color: #204230;
+    color: #ddd;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+    color: #666;
+    line-height: 1.5em;
+}
+
+.computer-header {
+    width: 100%;
+    height: 50px;
+    left: 0;
+    top: 0;
+    justify-content: space-between;
+    display: inline;
+    background: #121e20;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.1);
+    color: #fff;
+    position: fixed;
+    text-align: right;
+}
+
+#logo {
+    display: none;
+}
+
+.computer-header .top {
+    display: inline;
+}
+
+.computer-header .bottom {
+    display: inline;
+}
+
+.computer-header .icons {
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.computer-header .icons a {
+    color: #41484c;
+    transition: color 0.35s ease-in-out;
+}
+
+.computer-header .icons a:hover {
+    color: #fff;
+}
+
+.computer-header #menu-button {
+    display: none;
+    color: white;
+    padding-right: 14px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.computer-header #menu-button a {
+    background: black;
+    display: inline;
+}
+
+.computer-header #menu-button a {
+    background-color: #ddd;
+    color: black;
+}
+
+ul.icons {
+    display: inline;
+    cursor: default;
+    list-style: none;
+    padding-right: 2%;
+}
+
+ul.icons li {
+    display: inline;
+    padding-left: 2%;
+}
+
+ul.icons a {
+    font-family: 'Font Awesome 5 Brands', serif;
+    text-decoration: none;
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    text-align: center;
+    border: 0;
+}
+
+ul.icons span {
+    display: none;
+}
+
+#logo {
+    position: relative;
+    margin: 1.75em 1.75em 2em 1em;
+    min-height: 100px;
+    cursor: default;
+}
+
+#logo h1 {
+    position: relative;
+    left: 1.75em;
+    top: 1em;
+    color: #fff;
+    font-size: 0.8em;
+    line-height: 1em;
+}
+
+#logo p {
+    position: relative;
+    left: 2em;
+    top: 1.5em;
+    display: block;
+    font-size: 0.6em;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.25em;
+    margin: 0 0.5em 0 0;
+}
+
+#logo .image {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#logo .image.avatar img {
+    width: 100px;
+    border-radius: 40%;
+}
+
+#nav ul {
+    list-style: none;
+    padding-left: 5%;
+}
+
+#nav ul li {
+    float: left;
+    padding-right: 5%;
+}
+
+#nav ul li a {
+    display: block;
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    outline: 0;
+    border: 0;
+    transition: none;
+}
+
+#nav ul li a:active span {
+    color: #ffffff;
+}
+
+#nav ul li a:active i {
+    color: #e27689;
+}
+
+
+#nav ul li a span {
+    font-size: 0.8em;
+}
+
+
+/*MAIN*/
+#main {
+    margin-left: 0;
+    display: block;
+}
+
+#main > section {
+    margin: 0;
+    overflow: hidden;
+    padding: 4em 0;
+    box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
+    text-align: center;
+
+}
+
+section.full_article {
+    padding: 10em 0;
+    background-size: cover;
+    background-position: center center;
+}
+
+section.short_article {
+    background-color: #204230;
+    color: #ddd;
+    color: rgba(255, 255, 255, 0.75);
+    padding: 10em 0;
+    background-size: cover;
+    /*background-position: center center;*/
+    border-bottom: 8px solid #183b2b;
+}
+
+section.short_article h2, section.full_article h2 {
+    color: inherit;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+section.short_article strong, section.full_article strong {
+    color: #fff;
+    border-color: inherit;
+}
+
+a.button-33, .input-submit input {
+    background-color: #c2fbd7;
+    border-radius: 100px;
+    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
+    color: #222629;
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    touch-action: manipulation;
+}
+
+a.button-33 strong, .input-submit input strong {
+    color: rgba(31, 33, 33, 0.65);
+}
+
+a.button-33:hover, .input-submit input:hover {
+    box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset, rgba(44, 187, 99, .25) 0 1px 2px, rgba(44, 187, 99, .25) 0 2px 4px, rgba(44, 187, 99, .25) 0 4px 8px, rgba(44, 187, 99, .25) 0 8px 16px, rgba(44, 187, 99, .25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+}
+
+.main-admin {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #204230;
+}
+
+.section-admin {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #204230;
+}
+
+.container-admin {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-admin header {
+    font-size: 1.5em;
+    color: #fff;
+    padding-top: 2em;
+    margin-bottom: 0.5em;
+}
+
+.container-admin form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-admin div {
+    margin: 0 auto;
+}
+
+.input-title, .input-image, .input-short, .input-full {
+    width: 80%;
+    margin-bottom: 1em;
+}
+
+.input-title span, .input-image span, .input-short span, .input-full span {
+    color: #fff;
+    font-size: 1em;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+input[type="text"], input[name="image_path"], textarea {
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 1em;
+    font-size: 1.2em;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.input-submit input {
+    padding: 1em;
+    font-size: 1em;
+    border: none;
+}
+
+.input-submit {
+    width: fit-content;
+}
+
+
+@media screen and (min-width: 961px) and (max-width: 1320px) {
+
+    .container {
+        padding: 0 2em 0 2em;
+    }
+
+    .computer-header .bottom{
+        display: none;
+    }
+
+    #nav ul li a {
+        font-size: 1em;
+    }
+
+}
+
+@media screen and (max-width: 960px) {
+
+    #nav ul li a {
+        font-size: 1em;
+    }
+
+    .computer-header .bottom{
+        display: none;
+    }
+
+}
+
+/* Mobile */
+
+@media screen and (max-width: 736px) {
+
+    body {
+        font-size: 16pt;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        letter-spacing: 0;
+        font-weight: 300;
+    }
+
+    /* Icons */
+    ul.icons a {
+        margin-top: 5px;
+        width: 2em;
+        font-size: 1.25em;
+    }
+
+    ul.icons li a {
+        width: 1.75em;
+    }
+
+    #nav ul li a {
+        margin-top: 5px;
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    /* Header */
+    .computer-header {
+        width: 0;
+        height: 100%;
+    }
+
+    .computer-header .top {
+        display: none;
+        font-size: 0.9em;
+    }
+
+    .computer-header .bottom {
+        display: none;
+        font-size: 0.7em;
+    }
+
+    .computer-header #menu-button {
+        display: block;
+        padding: 14px 16px;
+        right: 0;
+        top: 0;
+        height: 10px;
+    }
+
+    /* Main */
+    #main {
+        margin-left: 0;
+    }
+
+    #logo {
+        position: relative;
+        margin: 1.75em 1.75em 2em 1em;
+        min-height: 100px;
+        cursor: default;
+        display: block;
+    }
+
+    #logo h1 {
+        position: relative;
+        left: 0.50em;
+        top: 0;
+        color: #fff;
+        font-size: 0.8em;
+        line-height: 1em;
+        text-align: center;
+    }
+
+    #logo p {
+        position: relative;
+        left: 1em;
+        top: 0.25em;
+        display: block;
+        font-size: 0.6em;
+        color: rgba(255, 255, 255, 0.5);
+        line-height: 1.25em;
+        margin: 0 0.5em 0 0;
+        text-align: center;
+    }
+
+    #logo .image {
+        position: relative;
+        left: 5%;
+        top: 0;
+    }
+
+    #logo .image.avatar img {
+        width: 100px;
+        border-radius: 40%;
+    }
+
+    #logo .image {
+        left: 5%;
+    }
+
+    .mobile-header {
+        width: 150px;
+        top: 0;
+        flex-direction: column;
+        justify-content: space-between;
+        display: flex;
+        background: #121e20;
+        /* offset-x | offset-y | blur-radius | spread-radius | color */
+        box-shadow: -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.1);
+        color: #fff;
+        position: fixed;
+        text-align: right;
+    }
+
+    .mobile-header .icons {
+        font-size: 0.8em;
+        text-align: center;
+    }
+
+    .mobile-header .icons a {
+        color: #41484c;
+        transition: color 0.35s ease-in-out;
+    }
+
+    .mobile-header .icons a:hover {
+        color: #fff;
+    }
+
+    .mobile-header .top {
+        display: block;
+        flex-grow: 1;
+    }
+
+    .mobile-header .top ul {
+        margin-left: 10%;
+    }
+
+    .mobile-header .bottom {
+        display: block;
+        flex-shrink: 0;
+        padding: 1.5em 0 0.75em 0;
+        font-weight: 300;
+        line-height: 1.75em;
+    }
+
+    .mobile-header .bottom .icons {
+        display: block;
+    }
+
+    #nav ul {
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 0;
+    }
+
+    #nav ul li {
+        padding-left: 0;
+        float: none;
+        font-size: 0.8em;
+    }
+
+    #nav ul li a {
+        display: block;
+        position: relative;
+        padding: 0.5em 1.5em 0.5em 1.5em;
+        color: rgba(255, 255, 255, 0.5);
+        text-decoration: none;
+        outline: 0;
+        border: 0;
+        transition: none;
+
+    }
+
+    #nav ul li a i {
+        padding: inherit;
+        position: absolute;
+        left: 0;
+
+    }
+
+    #nav ul li a span {
+        font-size: 0.8em;
+    }
+
+    ul.icons a {
+        width: 2em;
+        /*font-size: 1em;*/
+    }
+
+    ul.icons li a {
+        width: 1.75em;
+        display: inline-block;
+        padding-left: 0;
+    }
+
+    .container-admin header {
+        font-size: 1.5em;
+        color: #fff;
+        padding-top: 0;
+        margin-bottom: 0.5em;
+    }
+
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Yehor Savchenko</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <script src="https://kit.fontawesome.com/2a5be4e40a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/stylesheets/blog.css"/>
+</head>
+<script src="/javascripts/menubutton.js"></script>
+<body>
+
+
+<%- include('inc/header') %>
+
+<!-- Main -->
+<div class="main-admin">
+
+    <section class="section-admin">
+        
+        <div class="container-admin">
+
+            <form method="post" action="#">
+                <header> Add article</header>
+                <div>
+                    <div class="input-title">
+                        <span> Provide title: </span>
+                        <label>
+                            <input type="text" name="title" placeholder="Title"/>
+                        </label>
+                    </div>
+                    <div class="input-image">
+                        <span> Upload preview image path: </span>
+                        <label>
+                            <input name="image_path" placeholder="image path"></input>
+                        </label>
+                    </div>
+                    <div class="input-short">
+                        <span> Provide short description: </span>
+                        <label>
+                            <textarea name="short_description" placeholder="Short Description"></textarea>
+                        </label>
+                    </div>
+                    <div class="input-full">
+                        <label>
+                            <span> Provide full description: </span>
+                            <textarea name="full_description" placeholder="Full Description"></textarea>
+                        </label>
+                    </div>
+                    <div class="input-submit">
+                        <input type="submit" value="Send Message"/>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>

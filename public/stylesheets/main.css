@@ -1,0 +1,484 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a,
+em, img, strong, b, u, i, center, ol, ul, li label,
+footer, header, nav, section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 19pt;
+    font-weight: 300;
+    line-height: 1.75em;
+    color: #5d5d5d;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+    color: #666;
+    line-height: 1.5em;
+}
+
+.computer-header {
+    width: 300px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+    background: #121e20;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.1);
+    color: #fff;
+    position: fixed;
+    text-align: right;
+}
+
+.computer-header .top {
+    /*This property specifies how much of the remaining space in the flex container should be assigned to
+    the item (the flex grow factor).*/
+    flex-grow: 1;
+}
+
+.computer-header .bottom {
+    flex-shrink: 0;
+    padding: 1.5em 0 0.75em 0;
+}
+
+.computer-header .icons {
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.computer-header .icons a {
+    color: #41484c;
+    transition: color 0.35s ease-in-out;
+}
+
+.computer-header .icons a:hover {
+    color: #fff;
+}
+
+.computer-header #menu-button {
+    display: none;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.computer-header #menu-button a {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.computer-header #menu-button a {
+    background-color: #ddd;
+    color: black;
+}
+
+ul.icons {
+    cursor: default;
+    list-style: none;
+    padding-left: 0;
+}
+
+ul.icons li {
+    display: inline-block;
+    padding-left: 0;
+}
+
+ul.icons a {
+    font-family: 'Font Awesome 5 Brands', serif;
+    text-decoration: none;
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    text-align: center;
+    border: 0;
+}
+
+ul.icons span {
+    display: none;
+}
+
+#logo {
+    position: relative;
+    margin: 1.75em 1.75em 2em 1em;
+    min-height: 100px;
+    cursor: default;
+}
+
+#logo h1 {
+    position: relative;
+    left: 1.75em;
+    top: 1em;
+    color: #fff;
+    font-size: 0.8em;
+    line-height: 1em;
+}
+
+#logo p {
+    position: relative;
+    left: 2em;
+    top: 1.5em;
+    display: block;
+    font-size: 0.6em;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.25em;
+    margin: 0 0.5em 0 0;
+}
+
+#logo .image {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#logo .image.avatar img {
+    width: 100px;
+    border-radius: 40%;
+}
+
+#nav ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+#nav ul li {
+    padding-left: 0;
+}
+
+#nav ul li a {
+    display: block;
+    position: relative;
+    padding: 0.5em 1.5em 0.5em 1.5em;
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    outline: 0;
+    border: 0;
+    transition: none;
+}
+
+#nav ul li a:active span {
+    color: #ffffff;
+}
+
+#nav ul li a:active i {
+    color: #e27689;
+}
+
+#nav ul li a i {
+    padding: inherit;
+    position: absolute;
+    left: 0;
+}
+
+#nav ul li a span {
+    font-size: 0.8em;
+}
+
+
+/*MAIN*/
+#main {
+    margin-left: 300px;
+}
+
+#main > section {
+    margin: 0;
+    overflow: hidden;
+    padding: 4em 0;
+    box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
+    text-align: center;
+
+}
+
+section.one {
+    background-color: #204230;
+    color: #ddd;
+    color: rgba(255, 255, 255, 0.75);
+    padding: 10em 0;
+    background-size: cover;
+    background-position: center center;
+}
+
+section.one h2 {
+    color: inherit;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+section.one strong {
+    color: #fff;
+    border-color: inherit;
+}
+
+section.one a.button-33 {
+    background-color: #c2fbd7;
+    border-radius: 100px;
+    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
+    color: #222629;
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    touch-action: manipulation;
+}
+
+section.one a.button-33 strong {
+    color: rgba(31, 33, 33, 0.65);
+}
+
+section.one a.button-33:hover {
+    box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset, rgba(44, 187, 99, .25) 0 1px 2px, rgba(44, 187, 99, .25) 0 2px 4px, rgba(44, 187, 99, .25) 0 4px 8px, rgba(44, 187, 99, .25) 0 8px 16px, rgba(44, 187, 99, .25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+}
+
+section.two {
+    background-color: rgba(32, 66, 48, 0.20);
+}
+
+section.three {
+    background-color: rgba(32, 66, 48, 0.17);
+}
+
+section.four {
+    background-color: rgba(32, 66, 48, 0.14);
+}
+
+@media screen and (min-width: 961px) and (max-width: 1880px) {
+
+    /* Basic */
+    body {
+        font-size: 17pt;
+    }
+
+    /* Header */
+    .computer-header {
+        width: 350px;
+    }
+
+    /* Main */
+    #main {
+        margin-left: 350px;
+    }
+}
+
+@media screen and (min-width: 961px) and (max-width: 1320px) {
+
+    /* Basic */
+    body {
+        font-size: 16pt;
+    }
+
+    /* Icons */
+    ul.icons li a {
+        width: 1.75em;
+    }
+
+    /* Header */
+    .computer-header {
+        width: 20%;
+    }
+
+    .container {
+        padding: 0 2em 0 2em;
+    }
+
+    #logo .image {
+        position: relative;
+    }
+
+    #logo h1 {
+        text-align: right;
+        top: 0;
+    }
+
+    #logo p {
+        text-align: right;
+        top: 0.25em;
+    }
+
+    #nav ul li a {
+        font-size: 1em;
+    }
+
+    /* Main */
+    #main {
+        margin-left: 20%;
+    }
+}
+
+@media screen and (max-width: 960px) {
+
+    body {
+        font-size: 15pt;
+    }
+
+    /* Icons */
+    ul.icons a {
+        width: 2em;
+        font-size: 1em;
+    }
+
+    ul.icons li a {
+        width: 1.75em;
+    }
+
+    /* Header */
+    .computer-header {
+        width: 20%;
+    }
+
+    #logo .image {
+        position: relative;
+        /*margin-left: 0;*/
+        left: 5%;
+    }
+
+    #logo h1 {
+        text-align: center;
+        left: 0.50em;
+        top: 0;
+    }
+
+    #logo p {
+        text-align: center;
+        left: 1em;
+        top: 0.25em;
+    }
+
+    #nav ul li a {
+        font-size: 0.8em;
+    }
+
+    /* Main */
+    #main {
+        margin-left: 20%;
+    }
+}
+
+/* Mobile */
+
+@media screen and (max-width: 736px) {
+
+    body {
+        font-size: 16pt;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        letter-spacing: 0;
+        font-weight: 300;
+    }
+
+    /* Icons */
+    ul.icons a {
+        width: 2em;
+        font-size: 0.8em;
+    }
+
+    ul.icons li a {
+        width: 1.75em;
+    }
+
+    /* Header */
+    .computer-header {
+        width: 20%;
+    }
+
+    .computer-header .top{
+        font-size: 0.9em;
+    }
+
+    #logo .image {
+        position: relative;
+        /*margin-right: 25%;*/
+        left: 5%;
+    }
+
+    #logo h1 {
+        text-align: center;
+        left: 0.50em;
+        top: 0;
+    }
+
+    #logo p {
+        text-align: center;
+        left: 1em;
+        top: 0.25em;
+    }
+
+    #nav ul li a {
+        font-size: 0.8em;
+    }
+
+    /* Main */
+    #main {
+        margin-left: 20%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    /* Header */
+    .computer-header {
+        width: 0;
+        height: 100%;
+    }
+
+    .computer-header .top{
+        display: none;
+        font-size: 0.9em;
+    }
+
+    .computer-header .bottom{
+        display: none;
+        font-size: 1em;
+    }
+
+    .computer-header #menu-button {
+        display: block;
+        height: 10px;
+    }
+
+    /* Main */
+    #main {
+        margin-left: 0;
+    }
+
+    #logo .image {
+        left: 5%;
+    }
+
+    .mobile-header{
+        width: 150px;
+    }
+
+    .mobile-header .top{
+        display: block;
+    }
+
+    .mobile-header .bottom{
+        display: block;
+    }
+
+}
